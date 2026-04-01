@@ -1,0 +1,80 @@
+﻿<Window x:Class="WPFComponenteCombo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFComponenteCombo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Aquamarine" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Sistema operatvo" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="cb_SO" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5">
+            <ComboBoxItem Content="Windows 10"/>
+            <ComboBoxItem Content="Windows 11"/>
+            <ComboBoxItem Content="Linux"/>
+        </ComboBox>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Procesador" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="cb_procesador" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Marca" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="cb_marca" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/img/icons8-dell-48.png" Width="16" Height="16" Margin="0,0,5,0"/>
+                    <TextBlock Margin="15,0,0,0" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center">DEll</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/img/icons8-asus-64.png" Width="16" Height="16" Margin="0,0,5,0"/>
+                    <TextBlock Margin="15,0,0,0" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center">Asus</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/img/icons8-hp-50.png" Width="16" Height="16" Margin="0,0,5,0"/>
+                    <TextBlock Margin="15,0,0,0" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center">HP</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/img/icons8-lenovo-48.png" Width="16" Height="16" Margin="0,0,5,0"/>
+                    <TextBlock Margin="15,0,0,0" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center">Lenovo</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/img/icons8-mac-os-50.png" Width="16" Height="16" Margin="0,0,5,0"/>
+                    <TextBlock Margin="15,0,0,0" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center">Mac</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Memoria RAM" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox Name="cb_ram" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Selecione RAM" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="txb_ram" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="5"/>
+        <Button Name="bt_ram" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Margin="5" Padding="10,5" Click="bt_ram_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/img/icons8-agregar-48.png" Width="20" Height="20" Stretch="Uniform"/>
+                <TextBlock Text="Agregar" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="bt_aceptar" Content="Aceptar" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Click="btn_seleccion_Click" Margin="244,0,243,0"/>
+    </Grid>
+</Window>
