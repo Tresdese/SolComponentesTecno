@@ -87,7 +87,7 @@ namespace WPFComponenteCombo
                 MessageBox.Show(configuracion, "Opciones seleccionadas");
             }
             else {
-                MessageBox.Show("Faltan opciones por llenar", "Error");
+                MessageBox.Show("Faltan opciones por llenar", "Campos incompletos");
             }
         }
     }

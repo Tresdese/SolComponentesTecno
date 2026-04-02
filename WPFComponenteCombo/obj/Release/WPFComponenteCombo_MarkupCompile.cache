@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-E:\Archivos\Escuela PC\Tecnologias para la construccion\SolComponentesTecno\WPFComponenteCombo\obj\Debug\
+E:\Archivos\Escuela PC\Tecnologias para la construccion\SolComponentesTecno\WPFComponenteCombo\obj\Release\
 WPFComponenteCombo
 none
 false
-DEBUG;TRACE
+TRACE
 E:\Archivos\Escuela PC\Tecnologias para la construccion\SolComponentesTecno\WPFComponenteCombo\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ E:\Archivos\Escuela PC\Tecnologias para la construccion\SolComponentesTecno\WPFC
 13-1310406943
 MainWindow.xaml;
 
-False
+True
 
